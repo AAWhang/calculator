@@ -81,9 +81,46 @@ $(document).ready(function()
   var ommitstr = sentence1.length - 2;
   alert(ommitstr); //debug test
 
+  console.log(omitstr);
+
   var sayinfo = alert(sentence1.substr(1 , ommitstr));
 
 
+//Takes first and last letter, capitalizes them and prints them
+var person = function(sentence1){
+  return sayinfo;
+};
+
+var sentence1 = prompt("Enter a string");
+var letterCount = sentence1.length - 1;
+alert(letterCount);
+var firstLetter = sentence1.charAt (0).toUpperCase();
+var lastLetter = sentence1.charAt(letterCount).toUpperCase();
+
+var sayinfo = alert(firstLetter + lastLetter);
+
+
+
+
+//Same as above but returns them in reverse
+var persno = function(sentence1){
+  return sayinfo;
+};
+
+var sentence1 = prompt("Enter a string");
+var letterCount = sentence1.length - 1;
+alert(letterCount);
+var firstLetter = sentence1.charAt (0).toUpperCase();
+var lastLetter = sentence1.charAt(letterCount).toUpperCase();
+
+var sayinfo = alert(lastLetter + firstLetter);
+
+
+var callperson = function(sentence1) {
+  return bothperson;
+}
+
+var bothperson = alert(person(sentence1) + persno(sentence1));
 
 
 
@@ -92,7 +129,58 @@ $(document).ready(function()
 
 
 
+function person(sentence1){
+var letterCount = sentence1.length - 1;
+var firstLetter = sentence1.charAt (0).toUpperCase();
+var lastLetter = sentence1.charAt(letterCount).toUpperCase();
+
+var sayinfo = firstLetter + lastLetter;
+  return sayinfo;
+};
 
 
 
+
+//one big function
+          //Same as above but returns them in reverse
+          function persno(sentence1){
+          var letterCount = sentence1.length - 1;
+          var firstLetter = sentence1.charAt (0).toUpperCase();
+          var lastLetter = sentence1.charAt(letterCount).toUpperCase();
+
+          var sayinfo = lastLetter + firstLetter;
+
+            return sayinfo;
+          };
+
+
+          function preson(sentence1){
+          //var letterCount = sentence1.length; broken as shit plz fix
+
+          //var sayinfo = lettercount / 2;
+          //var rounddown = sayinfo.floor;
+          //alert(rounddown);
+
+          //  return 2;
+          var letterCount = sentence1.length;
+          alert(letterCount);
+          var firstLetter = (letterCount / 2);
+          alert(Math.floor(firstLetter));
+          var lastLetter = Math.floor(firstLetter);
+
+          var sayinfo = sentence1.charAt(firstLetter - 1);
+
+            return sayinfo;
+          };
+
+
+          var callperson = function(sentence1) {
+            return averageperson;
+          }
+
+          var sentence1 = prompt("Enter a string");
+          var bothperson = alert(person(sentence1) + persno(sentence1));
+          var nextperson = alert(sentence1 + persno(sentence1));
+          var averageperson = alert(preson(sentence1) + sentence1 + persno(sentence1));
+//end of big function
   });
