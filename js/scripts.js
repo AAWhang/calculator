@@ -143,6 +143,20 @@ var sayinfo = firstLetter + lastLetter;
 
 //one big function
           //Same as above but returns them in reverse
+          function person(sentence1){
+          var letterCount = sentence1.length - 1;
+          var firstLetter = sentence1.charAt (0).toUpperCase();
+          var lastLetter = sentence1.charAt(letterCount).toUpperCase();
+
+          var sayinfo = firstLetter + lastLetter;
+            return sayinfo;
+          };
+
+
+
+
+
+          //Same as above but returns them in reverse
           function persno(sentence1){
           var letterCount = sentence1.length - 1;
           var firstLetter = sentence1.charAt (0).toUpperCase();
@@ -173,14 +187,20 @@ var sayinfo = firstLetter + lastLetter;
             return sayinfo;
           };
 
+          function reverseString(hellows) {
+              return hellows.split("").reverse().join("");
+          };
+
 
           var callperson = function(sentence1) {
-            return averageperson;
+            return reversed;
           }
 
           var sentence1 = prompt("Enter a string");
           var bothperson = alert(person(sentence1) + persno(sentence1));
           var nextperson = alert(sentence1 + persno(sentence1));
-          var averageperson = alert(preson(sentence1) + sentence1 + persno(sentence1));
+          var averageperson = preson(sentence1) + sentence1 + persno(sentence1);
+          alert(averageperson);
+          var reversed = alert(reverseString(averageperson));
 //end of big function
   });
